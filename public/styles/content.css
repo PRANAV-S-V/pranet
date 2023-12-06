@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+  
+}
+
+body{
+  padding: 2rem;
+}
+
+.newPost{
+  margin-left: 1rem;
+}
+
+.modeButton{
+  padding: 0;
+  margin: 0;
+}
+
+.title-block{
+  height: 4rem;
+}
+
+.web-title{
+  font-family: "Nabla";
+  font-size: 5rem;
+  
+}
+
+#header-title{
+  font-family: "Shizuru";
+  color: #BBAB8C;
+  font-size: 4rem;
+}
+
+#footer-text{
+  font-family: "Macondo Swash Caps";
+  font-size: 1.5rem;
+}
+
+.post-page-title{
+  text-align: center;
+}
+

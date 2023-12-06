@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs")  %>
+<body>
+    <div>
+        <form action="/posted" method="post">
+        <input class="col-12 col-md-12 col-lg-13 mt-4 mb-5 title-block" type="text" placeholder="Title" name="title">
+       
+        <textarea class="col-12 col-md-12 col-lg-13 mb-3 content-block" name="content" placeholder="Content.." rows="15" cols="50"></textarea>
+        <button type="submit" class="btn btn-warning">Submit</button>
+    </form>
+    </div>
+</body>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs")  %>
+    <div class="row">
+        <% if (locals.rep){ %>
+            <h1 class="post-page-title">Posts</h1>
+        <% for(i=0; i< rep; i++){ %>
+            <div class="col-md-4 col-12">
+                <div class="card mb-4 mt-5 box-shadow">
+                  
+                  <div class="card-body">
+                    <p class="card-text"><%= postTitle[i].toUpperCase() %></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+                      </div>
+                      <small class="text-muted">Read More...</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <% } %>
+            <%} else { %>
+                <h1 class="post-page-title">No Posts.</h1>
+                <% } %>
+    </div>
+
+<%- include("partials/footer.ejs")  %>
