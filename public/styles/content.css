@@ -29,7 +29,7 @@ body{
 
 #header-title{
   font-family: "Shizuru";
-  color: #BBAB8C;
+  color: #F2BE22;
   font-size: 4rem;
 }
 
@@ -45,4 +45,35 @@ body{
 
 .font-for-title{
   font-family: "Macondo Swash Caps";
+}
+
+.plus-button{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  color: #C69774;
+}
+
+.add-post-title{
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .plus-button{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    
+  }
+  .add-post-title{
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .plus-button{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+  .add-post-title{
+    margin-bottom: 8rem;
+  }
 }
