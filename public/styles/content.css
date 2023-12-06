@@ -40,5 +40,9 @@ body{
 
 .post-page-title{
   text-align: center;
+  margin-top: 1rem;
 }
 
+.font-for-title{
+  font-family: "Macondo Swash Caps";
+}

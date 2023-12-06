@@ -30,18 +30,13 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
   });
 
-  // to add post
-app.get("/post", (req, res) => {
-    res.render("postCt.ejs", {
-        mode: sendMode()
-    });
-});
+ 
 
 // to submit the post
 app.post("/posted", (req, res) => { 
     title.push(req.body.title);
     content.push(req.body.concat);
-    res.render("home.ejs", {
+    res.render("homepage.ejs", {
         mode: sendMode(),
         rep: title.length,
         postTitle: title,
@@ -52,7 +47,7 @@ app.post("/posted", (req, res) => {
 app.post("/login", (req, res) =>{
     // authentication works.
     if (req.body.emailID === "thisispranavsv" && req.body.password === "123456"){
-            res.render("home.ejs", {
+            res.render("homepage.ejs", {
                 // sends the mode 
                 mode: sendMode(),
                 // sends the number of posts
@@ -73,15 +68,32 @@ app.get("/homepage", (req, res) => {
     valueOfMode = !valueOfMode;
     let currentPage = req
     console.log(currentPage);
-    res.render("home.ejs", {
+    res.render("homepage.ejs", {
         mode: sendMode(),
         rep: title.length,
         postTitle: title,
         postContent: content
+        
     });
     
 });
 
+ // to add post
+ app.get("/post", (req, res) => {
+    res.render("post.ejs", {
+        mode: sendMode()
+    });
+});
+
+app.get("/edit", (req, res) => {
+    res.render("post.ejs",  {
+        mode: sendMode()
+    })
+});
+
+app.post("/removePost", (req, res) => {
+    console.log(req.body);
+});
 // make the server start and listen to the requests from the user.
 app.listen(port, (req, res) => {
     console.log("The server is live now.")
