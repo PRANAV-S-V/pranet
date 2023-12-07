@@ -44,7 +44,7 @@ app.post("/posted", (req, res) => {
     });
 });
 // when user login with their credentials, making the homepage display.
-app.post("/login", (req, res) =>{
+app.post("/homepage", (req, res) =>{
     // authentication works.
     if (req.body.emailID === "thisispranavsv" && req.body.password === "123456"){
             res.render("homepage.ejs", {
@@ -93,7 +93,7 @@ app.get("/edit", (req, res) => {
 
 app.post("/removePost", (req, res) => {
     console.log(req.body);
-});
+}); 
 // make the server start and listen to the requests from the user.
 app.listen(port, (req, res) => {
     console.log("The server is live now.")
