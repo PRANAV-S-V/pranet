@@ -40,7 +40,11 @@ body{
 
 .post-page-title{
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.post-card{
+  margin-bottom: 5rem;
 }
 
 .font-for-title{
@@ -48,15 +52,18 @@ body{
 }
 
 .plus-button{
+  color: #C69774;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+.plus-button{
   margin-top: 5rem;
   margin-bottom: 2rem;
   color: #C69774;
 }
-
-@media screen and (max-width: 600px) {
-  .footer-section{
-    margin-top: 8em;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -66,11 +73,10 @@ body{
     
   }
   .add-post-title{
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
-
   .footer-section{
-    margin-top: 2em;
+    margin-top: 4em;
   }
 }
 
@@ -80,7 +86,16 @@ body{
     margin-bottom: 2rem;
   }
   .add-post-title{
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
+  }
+
+
+  .post-card{
+    margin-bottom: 10rem;
+  }
+
+  .footer-section{
+    margin-top: 4em;
   }
   
 }
