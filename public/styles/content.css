@@ -53,8 +53,10 @@ body{
   color: #C69774;
 }
 
-.add-post-title{
-  margin-bottom: 5rem;
+@media screen and (max-width: 600px) {
+  .footer-section{
+    margin-top: 8em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -66,6 +68,10 @@ body{
   .add-post-title{
     margin-bottom: 6rem;
   }
+
+  .footer-section{
+    margin-top: 8em;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -76,4 +82,14 @@ body{
   .add-post-title{
     margin-bottom: 8rem;
   }
+  
+}
+
+
+
+#read-content{
+  margin-bottom: 14rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 5rem;
 }
