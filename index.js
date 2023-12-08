@@ -58,7 +58,9 @@ app.post("/homepage", (req, res) =>{
             });
             
     } else{
+        
         res.render("index.ejs");
+        
     }
 });
 
